@@ -25,6 +25,17 @@ public class Main{
 
 		for (Persona persona : personas){
 			System.out.println(persona.obtenerDatos());
+			if (persona instanceof Cliente){
+				Cliente cliente_temp= (Cliente) persona;
+				System.out.println("Número de tarjeta (cast): "+cliente_temp.getCuenta().getTarjeta().getNoTarjeta());
+			}
 		}
+
+		Empleado em2 = new Empleado ("Jorch", 21, 'M', "Empo02");
+		System.out.println(em2.obtenerDatos());
+		Empleado em3= em2;
+		
+		em3.setNombre("Almita");
+		System.out.println(em3.obtenerDatos());
 	}
 }

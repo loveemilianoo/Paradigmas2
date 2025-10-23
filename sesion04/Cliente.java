@@ -28,7 +28,7 @@ public class Cliente extends Persona{
     public String obtenerDatos(){
         String cadena= "#### Cliente ####" + 
         "\nNombre: "+this.nombre+ 
-        "\nEdad: "+getEdad()+ 
+        "\nEdad: "+super.getEdad()+ 
         "\nSexo: "+getSexo()+
         "\nNo. Cliente: "+this.noCliente+ 
         "\nNo.Tarjeta: "+getCuenta().getTarjeta().getNoTarjeta()+

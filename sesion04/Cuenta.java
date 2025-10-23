@@ -9,10 +9,10 @@ public class Cuenta{
 		this.saldo= saldo;
 		this.tarjeta= tarjeta;
 	}
+	
 	public Cuenta (double saldo){
 		this.saldo= saldo;
 	}
-
 	public double getSaldo(){
 		return this.saldo;
 	}
@@ -30,7 +30,6 @@ public class Cuenta{
 		this.saldo=  this.saldo - retiro;
 		return saldo;
 	}
-
 	public Tarjeta getTarjeta(){
 		return this.tarjeta;
 	}
