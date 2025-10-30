@@ -11,12 +11,13 @@ public class Main{
 		cal1.resta(10,5);
 		System.out.println("Resta: "+cal1.getResultado());
 
-		
-		System.out.println("Division: "+cal1.division(20,4));
+		try{
+			System.out.println("Division: "+cal1.division(20,0));
+		} catch (ArithmeticException e){
+			System.out.println("Error: "+e.toString());
+		}
 
-		/*cal1.multiplicar(5,10);
-		System.out.println("Multiplicar: "+cal1.getResultado());*/
-		//System.out.println("Suma: "cal1.resta(10,3));
-		//Operaciones oper= new Operaciones();
+		CalculadoraFrame ventana1= new CalculadoraFrame();
+		ventana1.setVisible(true);
 	}
 }

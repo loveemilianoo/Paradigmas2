@@ -27,7 +27,7 @@ public class Calculadora implements Operaciones{
 		resultado= num1*num2;
 	}
 
-	public int division(int num1, int num2){
+	public int division(int num1, int num2){ //throws ArithmeticException
 		int result=0;
 		try{
 			result=num1/num2;
@@ -36,6 +36,4 @@ public class Calculadora implements Operaciones{
 		}
 		return result;
 	}
-
-
 }
